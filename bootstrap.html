@@ -14,7 +14,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
+    <!--Awsome icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- My CSS -->
     <link rel="stylesheet" href="css/base.css">
   </head>
@@ -28,27 +29,55 @@
         <div class="row justify-content-center">
           <div class="col-10 col-md-8 col-sm-10">
             <h1 class="py-5">You are here to find innovation projects in Canada.</h1>
-            <div class="mb-5 form-group inline d-flex justify-content-center">
-              <input class="form-control input-lg col-lg-9" type="text" placeholder="Keyword of interested project" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </div>
+            <div class="mb-5 pb-5 form-group inline d-flex justify-content-center">
+              <input class="form-control input-lg col-lg-9" type="text" placeholder="Keyword of interested project" aria-label="Search">            </div>
           </div>
         </div>
       </div><!--</container> -->
     </section><!-- /.<section> -->
 
-    <section id="map" class="align-items-center">
+    <section id="federal" class="my-5 align-items-center">
+      <div class="container">
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-map-tab" data-toggle="pill" href="#pills-map" role="tab" aria-controls="pills-map" aria-selected="true">Heatmap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-univer-tab" data-toggle="pill" href="#pills-univer" role="tab" aria-controls="pills-univer" aria-selected="false">Top Universities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-disc-tab" data-toggle="pill" href="#pills-disc" role="tab" aria-controls="pills-disc" aria-selected="false">Top Research Descipline</a>
+          </li>
+        </ul>
+      </div>
       <div class="container">
         <div class="row mt-5 align-items-center justify-content-center">
           <div class="col-11 col-sm-10 col-md-11 col-lg-10">
-            <img class="img-fluid py-5"src="img/map.png" alt="innovation heatmap of Canada">
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-map" role="tabpanel" aria-labelledby="pills-map-tab">
+                <img class="img-fluid py-5"src="img/map.png" alt="innovation heatmap of Canada">
+              </div>
+              <div class="tab-pane fade" id="pills-univer" role="tabpanel" aria-labelledby="pills-univer-tab">
+                <div>
+                    <a href="https://plot.ly/~batukasss/6/?share_key=yjt0JizCzD6LQmIvgTmrVN" target="_blank" title="Top Innov Univ" style="display: block; text-align: center;"><img src="https://plot.ly/~batukasss/6.png?share_key=yjt0JizCzD6LQmIvgTmrVN" alt="Top Innov Univ" style="max-width: 100%;width: 900px;"  width="900" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+                    <script data-plotly="batukasss:6" sharekey-plotly="yjt0JizCzD6LQmIvgTmrVN" src="https://plot.ly/embed.js" async></script>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-disc" role="tabpanel" aria-labelledby="pills-disc-tab">
+                <div>
+                    <a href="https://plot.ly/~batukasss/8/?share_key=hQTwFIuuOrUG0Fd7f34Bbe" target="_blank" title="Top Research Disc" style="display: block; text-align: center;"><img src="https://plot.ly/~batukasss/8.png?share_key=hQTwFIuuOrUG0Fd7f34Bbe" alt="Top Research Disc" style="max-width: 100%;width: 900px;"  width="900" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+                    <script data-plotly="batukasss:8" sharekey-plotly="hQTwFIuuOrUG0Fd7f34Bbe" src="https://plot.ly/embed.js" async></script>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div><!-- /.container -->
     </section>
 
-    <nav class="vanbar navbar-light navbar-expand-md .nav-justified">
-      <div class="container-fluid">
+    <div class="container ">
+      <nav class="vanbar navbar-light navbar-expand-md .nav-justified">
         <button class="navbar-toggler aside-menu-sm-toggler" type="button" data-toggle="aside-menu-show">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -61,22 +90,39 @@
             <a class="px-4 nav-item nav-link" id="nav-bc-tab" data-toggle="tab" href="#nav-bc" role="tab" aria-selected="false">BC</a>
             <a class="px-4 nav-item nav-link" id="nav-mb-tab" data-toggle="tab" href="#nav-mb" role="tab" aria-selected="false">MB</a>
             <a class="px-4 nav-item nav-link" id="nav-nl-tab" data-toggle="tab" href="#nav-nl" role="tab" aria-selected="false">NL</a>
-            <a class="px-4 nav-item nav-link" id="nav-ns-tab" data-toggle="tab" href="#nav-ns" role="tab" aria-selected="false">'NS</a>
+            <a class="px-4 nav-item nav-link" id="nav-ns-tab" data-toggle="tab" href="#nav-ns" role="tab" aria-selected="false">NS</a>
             <a class="px-4 nav-item nav-link" id="nav-on-tab" data-toggle="tab" href="#nav-on" role="tab" aria-selected="false">ON</a>
             <a class="px-4 nav-item nav-link" id="nav-pe-tab" data-toggle="tab" href="#nav-pe" role="tab" aria-selected="true">PE</a>
             <a class="px-4 nav-item nav-link" id="nav-qc-tab" data-toggle="tab" href="#nav-qc" role="tab" aria-selected="false">QC</a>
             <a class="px-4 nav-item nav-link" id="nav-sk-tab" data-toggle="tab" href="#nav-sk" role="tab" aria-selected="false">SK</a>
           </div>
-          </nav>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="nav-ab" role="tabpanel" aria-labelledby="nav-ab-tab">.AB..</div>
-            <div class="tab-pane fade" id="nav-bc" role="tabpanel" aria-labelledby="nav-bc-tab">.BC..</div>
-            <div class="tab-pane fade" id="nav-mb" role="tabpanel" aria-labelledby="nav-mb-tab">..MB.</div>
-          </div>
-
-
         </section>
-      </div><!-- /.container -->
+      </nav>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="nav-ab" role="tabpanel" aria-labelledby="nav-ab-tab">.AB..</div>
+          <div class="tab-pane fade" id="nav-mb" role="tabpanel" aria-labelledby="nav-bc-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class="tab-pane fade" id="nav-nl" role="tabpanel" aria-labelledby="nav-bc-tab">.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</div>
+          <div class="tab-pane fade" id="nav-ns" role="tabpanel" aria-labelledby="nav-bc-tab">
+            <div>
+                <a href="https://plot.ly/~batukasss/6/?share_key=yjt0JizCzD6LQmIvgTmrVN" target="_blank" title="Top Innov Univ" style="display: block; text-align: center;"><img src="https://plot.ly/~batukasss/6.png?share_key=yjt0JizCzD6LQmIvgTmrVN" alt="Top Innov Univ" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+                <script data-plotly="batukasss:6" sharekey-plotly="yjt0JizCzD6LQmIvgTmrVN" src="https://plot.ly/embed.js" async></script>
+            </div>
+
+          <div class="tab-pane fade" id="nav-on" role="tabpanel" aria-labelledby="nav-bc-tab">.BC..</div>
+          <div class="tab-pane fade" id="nav-pe" role="tabpanel" aria-labelledby="nav-bc-tab">.BC..</div>
+          <div class="tab-pane fade" id="nav-qc" role="tabpanel" aria-labelledby="nav-mb-tab">..MB.</div>
+          <div class="tab-pane fade" id="nav-sk" role="tabpanel" aria-labelledby="nav-mb-tab">..MB.</div>
+
+        </div>
+    </div><!-- /.container -->
+    <footer class="bg-secondary d-flex justify-content-center">
+      <section class="py-2">
+        <a href="#" class="text-light px-2"><i class="fab fa-github-square fa-2x"></i></a>
+        <a href="#" class="text-light px-2"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="#" class="text-light px-2"><i class="fas fa-envelope-square fa-2x"></i></a>
+      </section>
+
+    </footer>
 
 
 
