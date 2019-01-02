@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/favicon.ico">
 
-    <title></title>
+    <title>Projector</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -18,30 +19,65 @@
     <link rel="stylesheet" href="css/base.css">
   </head>
   <body>
-    <div class="m-3 blog-header-logo">
+    <div class="m-4 blog-header-logo">
       <img src="img/Logo.png" class="p-5" alt="">
     </div>
 
-    <section id="search" class="text-center">
-      <div class="p-5 container">
-        <h1>You are here to find innovation projects in Canada.</h1>
-        <div class="p-5 form-group inline d-flex justify-content-center">
-          <input class="form-control input-lg col-lg-9" type="text" placeholder="Keyword of interested project" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+    <section id="search" class="d-flex align-items-center text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10 col-md-8 col-sm-10">
+            <h1 class="py-5">You are here to find innovation projects in Canada.</h1>
+            <div class="mb-5 form-group inline d-flex justify-content-center">
+              <input class="form-control input-lg col-lg-9" type="text" placeholder="Keyword of interested project" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </div>
+          </div>
         </div>
       </div><!--</container> -->
     </section><!-- /.<section> -->
 
-        <hr>
-
-    <section id="map" class="d-flex align-items-center">
+    <section id="map" class="align-items-center">
       <div class="container">
-        <img class="pt-5 mx-auto d-block"src="img/map.png" alt="innovation heatmap of Canada">
-      </div><!-- /.container -->
-      <div class="container">
-
+        <div class="row mt-5 align-items-center justify-content-center">
+          <div class="col-11 col-sm-10 col-md-11 col-lg-10">
+            <img class="img-fluid py-5"src="img/map.png" alt="innovation heatmap of Canada">
+          </div>
+        </div>
       </div><!-- /.container -->
     </section>
+
+    <nav class="vanbar navbar-light navbar-expand-md .nav-justified">
+      <div class="container-fluid">
+        <button class="navbar-toggler aside-menu-sm-toggler" type="button" data-toggle="aside-menu-show">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <button type="button" class="navbar-toggler btn-dark" data-toggler="collapse" data-target="myNav" aria-controls="#myNav" aria-label="toggler nav">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <section class="tabs collapse navbar-collapse justify-content-center" id="#myNav">
+          <div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
+            <a class="px-4 nav-item nav-link active" id="nav-ab-tab" data-toggle="tab" href="#nav-ab" role="tab" aria-selected="true">AB</a>
+            <a class="px-4 nav-item nav-link" id="nav-bc-tab" data-toggle="tab" href="#nav-bc" role="tab" aria-selected="false">BC</a>
+            <a class="px-4 nav-item nav-link" id="nav-mb-tab" data-toggle="tab" href="#nav-mb" role="tab" aria-selected="false">MB</a>
+            <a class="px-4 nav-item nav-link" id="nav-nl-tab" data-toggle="tab" href="#nav-nl" role="tab" aria-selected="false">NL</a>
+            <a class="px-4 nav-item nav-link" id="nav-ns-tab" data-toggle="tab" href="#nav-ns" role="tab" aria-selected="false">'NS</a>
+            <a class="px-4 nav-item nav-link" id="nav-on-tab" data-toggle="tab" href="#nav-on" role="tab" aria-selected="false">ON</a>
+            <a class="px-4 nav-item nav-link" id="nav-pe-tab" data-toggle="tab" href="#nav-pe" role="tab" aria-selected="true">PE</a>
+            <a class="px-4 nav-item nav-link" id="nav-qc-tab" data-toggle="tab" href="#nav-qc" role="tab" aria-selected="false">QC</a>
+            <a class="px-4 nav-item nav-link" id="nav-sk-tab" data-toggle="tab" href="#nav-sk" role="tab" aria-selected="false">SK</a>
+          </div>
+          </nav>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="nav-ab" role="tabpanel" aria-labelledby="nav-ab-tab">.AB..</div>
+            <div class="tab-pane fade" id="nav-bc" role="tabpanel" aria-labelledby="nav-bc-tab">.BC..</div>
+            <div class="tab-pane fade" id="nav-mb" role="tabpanel" aria-labelledby="nav-mb-tab">..MB.</div>
+          </div>
+
+
+        </section>
+      </div><!-- /.container -->
+
 
 
     <!-- jQuery first, then Bootstrap JS. -->
